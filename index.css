@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    background: #1C1C1C;
+    display: absolute;
+}
+
+.main-container {
+    padding: 49px 100px;
+    background: #1F2937;
+    width: 446px;
+    margin: 10% auto;
+}
+
+#settings-page-dark{
+     padding: 49px 100px;
+    background: #1F2937;
+    width: 446px;
+    margin: 10% auto;
+    display: none;
+}
+
+#logo-credit-page {
+     padding: 49px 100px;
+    background: white;
+    width: 446px;
+    margin: 10% auto;
+    display: none;
+    color: white;    
+}
+
+.generated-password-section {
+    width: 100%;    
+    border-top: #2F3E53 solid 2px;
+    margin: 50px auto;
+    padding-top: 30px;
+    
+    display: flex;
+    gap: 25px; 
+    justify-content: center;
+}
+
+.settings-top-wrapper-dark {
+    display: flex;
+    gap: 365px;
+}
+
+.password-symbols-adjustment-section-dark {
+    color: #D5D4D8;
+    font-family: Inter;
+}
+
+.password-numbers-adjustment-section-dark {
+    color: white;
+    font-family: Inter;    
+}
+
+.password-numbers-adjustment-row-1-dark {
+    display: flex;
+}
+
+.password-adjustment-settings-dark {
+    border-top: #2F3E53 solid 2px;
+}
+
+.password-symbols-adjustment-row-1-dark {
+    display: flex;
+    color: white;
+    font-family: Inter;    
+}
+
+.toggle-on-off-wrapper {
+    position: relative;
+    margin-left: 160px;
+}
+
+#toogle-on-button, #toogle-off-button{
+     position: absolute;
+  top: 0;
+  left: 0;
+} 
+
+#toogle-on-button-2, #toogle-off-button-2{
+     position: absolute;
+  top: 0;
+  left: 0;
+} 
+
+#toogle-on-button{
+    display: none;
+}
+
+.content-heading {
+    margin-left: 10px;
+}
+
+.generated-password-container {
+    background: #273549;    
+    width: 211px;
+    height: 39px;
+    border-radius: 6px;
+    color: #5DEF92;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.light-mode-icon {
+    display: flex;
+    justify-content: flex-end; 
+    
+}
+
+.back-icon {
+    display: flex;
+    justify-content: flex-start; 
+    width: 45px;
+    height: 45px;
+    background-size: contain;
+    background: url(Images/left-light.png);
+    background-size: contain;
+}
+
+.website-title{
+    font-family: Karla;
+    font-size: 40px;
+    width:400px;
+}
+
+.title-subheading {
+    color: #D5D4D8;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.white-text {
+    color: white;
+}
+
+.green-text {
+    color: #4ADF86;
+}
+
+.main-button-style {
+    background-color: #10B981;    
+    color: #FFFFFF;
+    padding: 9px 17px 9px 15px;
+    border-radius: 6px;
+    font-weight: 500px;
+    border: none;
+}
+
+#save-button {
+    margin-top: 25px;
+}
+
+.password-specification-description{
+    color: #D5D4D8;
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: normal;
+    width: 302px;
+}
+
+#desired-length {
+    
+    margin-left: 160px;
+    margin-top: 15px;
+    background-color: #273549; 
+    border: none;
+    width: 34px;
+    height: 31px;
+    text-align: center;
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 20px;
+    color: #5DEF92;
+}
+
+
+

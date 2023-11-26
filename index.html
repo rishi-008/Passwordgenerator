@@ -1,0 +1,98 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Karla:wght@800&family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Inter:wght@400;500&family=Karla:wght@800&family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main-container" id="home-page">
+            <!-- Is it okay if I do flexbox directly on the img tag itself? -->
+             <h1 class="website-title"><span class="white-text">Generate a</span><br><span          class="green-text">random password</span></h1>
+            <h2 class="title-subheading">Never use an insecure password again.</h2> 
+            <button class="main-button-style" type="button" onClick="generatePassword()">Generate passwords</button>
+            
+            <!-- Clicking on this button the first time doesn't seem to do anything. The second time I click it then it works fine -->
+            <button class="main-button-style" type="button" onClick="showAppropriatePage()">Settings</button>
+            <div class="generated-password-section">
+                <div class="generated-password-container" id="first-generated-pasword" onclick="copyPassword()">
+                    
+                </div>
+                <div class="generated-password-container" id="second-generated-pasword" onclick="copyPassword()">
+                    
+                </div>
+            </div>
+        </div>
+          <button class="main-button-style" id="logo-references-show-hide" onclick="showIconReferences()">
+                Credits for logos used
+            </button>
+            <div id="logo-credit-page">
+                <a href="https://www.flaticon.com/free-icons/numbers" title="numbers icons" target="_blank">Numbers icons created by Freepik - Flaticon</a>
+                <br>
+                <a href="https://www.flaticon.com/free-icons/nintendo-switch" title="nintendo switch icons" target="_blank">Nintendo switch icons created by Smashicons - Flaticon</a>
+                <br>
+                <a href="https://www.flaticon.com/free-icons/back" title="back icons" target="_blank">Back icons created by Arkinasi - Flaticon</a>
+                <br>
+                <a href="https://www.flaticon.com/free-icons/activate" title="activate icons" target="_blank">Activate icons created by Smashicons - Flaticon</a>
+                <br>
+                 <a href="https://www.flaticon.com/free-icons/question" title="question icons" target="_blank">Question icons created by Freepik - Flaticon</a>
+                 <br>
+                  <a href="https://www.flaticon.com/free-icons/contruction" title="contruction icons" target="_blank">Contruction icons created by catkuro - Flaticon</a>
+            </div>
+        
+        <div class="settings-wrapper-dark" id="settings-page-dark">
+            <div class="settings-top-wrapper-dark">
+                <div class="back-icon" onClick="showAppropriatePage()">
+                </div>
+            </div>
+            <h1 class="website-title green-text">Settings<h1>
+            <h2 class="title-subheading">Adjust the specifics of your randomly generated password</h2> 
+            <div class="password-adjustment-settings-dark">
+                <div class="password-symbols-adjustment-section-dark">
+                    <div class="password-symbols-adjustment-row-1-dark">
+                        <img src="Images/symbol-logo-dark.svg"/>
+                        <h2 class="content-heading">Include Symbols</h2>
+                        <div class="toggle-on-off-wrapper">
+                            <img id="toogle-on-button" src="Images/toggle-on-dark.svg" onclick="changeToggle(true)"/>
+                            <img id="toogle-off-button" src="Images/turn-off-dark.svg" onclick="changeToggle(true)"/>
+                        </div>
+                    </div>
+                    <p class="password-specification-description">
+                        Some websites require one or more symbols for the password to be accepted. Toggle the switch on the right to generate your password with symbol(s)
+                    </p>
+                </div>
+                 <div class="password-numbers-adjustment-section-dark">
+                    <div class="password-numbers-adjustment-row-1-dark">
+                        <img src="Images/numbers-logo-dark.svg"/>
+                        <h2 class="content-heading">Include Numbers</h2>
+                        <div class="toggle-on-off-wrapper">
+                            <img id="toogle-on-button-2" src="Images/toggle-on-dark.svg" onclick="changeToggle(false)"/>
+                            <img id="toogle-off-button-2" src="Images/turn-off-dark.svg" onclick="changeToggle(false)"/>
+                        </div>
+                    </div>
+                    <p class="password-specification-description">
+                        Some websites require one or more numbers for the password to be accepted. Toggle the switch on the right to generate your password with number(s)
+                    </p>
+                </div>
+                 <div class="password-length-adjustment-section-dark">
+                    <div class="password-symbols-adjustment-row-1-dark">
+                        <img src="Images/length-logo-dark.svg"/>
+                        <h2 class="content-heading">Password Length</h2>
+                        <input type="text" id="desired-length" placeholder="8">
+                    </div>
+                    <p class="password-specification-description">
+                        Do you prefer your passwords to be of a certain length? Then, you can specify it to any value on the right text box
+                    </p>
+                </div>
+                <button class="main-button-style" id="save-button" type="button" onclick="saveUserPassAdjustments()">
+                Save
+                </button>
+            </div>
+          
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
